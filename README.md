@@ -1,6 +1,6 @@
 This example is using SingleStore cluster in a Docker container.
 
-Configuration:
+**Configuration:**
 
 Sign up for a free SingleStore license.
 
