@@ -8,12 +8,12 @@ Get the password and key provided when using the steps for building a docker ima
 
 Execute the following PowerShell script to build and run the docker container
 
-docker run -i --init `
+**docker run -i --init `
     --name memsql-ciab `
     -e LICENSE_KEY="YOUR_LICENSE_KEY_HERE" `
     -e ROOT_PASSWORD="YOUR_ROOT_PASSWORD_HERE" `
     -p 3306:3306 -p 8080:8080 `
     memsql/cluster-in-a-box
-docker start memsql-ciab
+docker start memsql-ciab**
 
 Adjust the connection details in appsettings.Development.json, run dotnet restore, and then run the app.
