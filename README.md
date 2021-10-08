@@ -1,4 +1,4 @@
-This example is using SingleStore cluster in a Docker container.
+This example is using **SingleStore** cluster in a Docker container and **EntityFramework ORM**.
 
 **Configuration:**
 
@@ -16,4 +16,6 @@ Execute the following PowerShell script to build and run the docker container
     memsql/cluster-in-a-box
 docker start memsql-ciab**
 
-Adjust the connection details in appsettings.Development.json, run dotnet restore, and then run the app.
+Configure your EntityFramework database context using the adjusted connection string in your appsettings.Development.json file. SingleStore is usign EF MySQL provider.
+
+Run dotnet restore, and then run the app.
